@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LiquidGlass | Custom Browser Engine</title>
+    <style>
+        :root {
+            --primary: #00d2ff;
+            --bg: #0f172a;
+            --text: #f8fafc;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            padding: 2rem;
+            border: 1px solid #1e293b;
+            border-radius: 1rem;
+            background: rgba(30, 41, 59, 0.5);
+            backdrop-filter: blur(10px);
+        }
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #00d2ff, #3a7bd5);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        p {
+            font-size: 1.2rem;
+            color: #94a3b8;
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            background: #1e293b;
+            border-radius: 2rem;
+            font-size: 0.9rem;
+            color: var(--primary);
+            margin-bottom: 1rem;
+            border: 1px solid var(--primary);
+        }
+        .github-btn {
+            margin-top: 2rem;
+            display: inline-block;
+            padding: 0.8rem 2rem;
+            background: var(--primary);
+            color: var(--bg);
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 0.5rem;
+            transition: transform 0.2s;
+        }
+        .github-btn:hover {
+            transform: scale(1.05);
+        }
+        code {
+            color: #e2e8f0;
+            background: #1e293b;
+            padding: 0.2rem 0.4rem;
+            border-radius: 0.3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="badge">Open Source Project</div>
+        <h1>LiquidGlass</h1>
+        <p>Une extension avancée pour Google Chrome optimisant l'interface utilisateur et l'expérience de navigation via des scripts injectés et une gestion personnalisée du DOM.</p>
+        
+        <div style="margin-top: 2rem; text-align: left;">
+            <h3>Spécifications Techniques :</h3>
+            <ul>
+                <li>Architecture basée sur <code>Manifest V3</code></li>
+                <li>Optimisation des performances JavaScript</li>
+                <li>Interface fluide avec support du mode sombre natif</li>
+            </ul>
+        </div>
+
+        <a href="https://github.com/Gnof-the-shark/LiquidGlass-for-Google-Chrome" class="github-btn">Voir le code sur GitHub</a>
+    </div>
+
+</body>
+</html>
